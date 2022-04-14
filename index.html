@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Form</title>
+    <link rel="stylesheet" href="form-style.css">
+
+    <script src="form.js"></script>
+</head>
+<body>
+    <form name="contactForm" onsubmit="return validateForm() "   action="post" >
+        <h2>Application Form</h2>
+        <div class="row">
+            <label>Full Name</label>
+            <input type="text" name="name" id="name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <label>Email Address</label>
+            <input type="text" name="email" id="email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+            <label>Mobile Number</label>
+            <input type="text" name="mobile" id="mobile" maxlength="10">
+            <div class="error" id="mobileErr"></div>
+        </div>
+        <div class="row">
+            <label>SSLC Mark</label>
+            <input type="text" name="sslc" id="sslc" maxlength="3">
+            <div class="error" id="sslcErr"></div>
+        </div>
+        <div class="row">
+            <label>PUC Mark</label>
+            <input type="text" name="puc" id="puc" maxlength="3">
+            <div class="error" id="pucErr"></div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="Submit"  onsubmit="return validateForm(); "  >
+        </div>
+    </form>
+    <div class="result"></div>
+    <p id="demo"></p>
+    <div id= "box"> <th>UnSelected Student List</th></div>
+    <br>
+    <br>
+    <p id="demo1"></p>
+    <div id= "box1"> <th>Selected Student List</th></div>   
+
+</body>
+<script>
+
+</script>
+</html>
